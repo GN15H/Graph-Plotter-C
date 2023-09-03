@@ -1,0 +1,18 @@
+void AsignarUsuario(int argc, char *argv[],unsigned char opcion, struct NewUser *user);
+int IngresarUsername(int argc, char *argv[]);
+void a();
+int BuscarUser(int argc, char *argv[],struct NewUser *user, unsigned char soloBuscar, char username[25], char error);
+void CompararUsuario(FILE *usuarios, struct NewUser *user, unsigned char *encontrado, char username[25]);
+unsigned char BuscarPassword(struct NewUser *user, int posicion, FILE *usuarios);
+void MenuAdmin(int argc, char *argv[],struct NewUser *user);
+void CrearUser(int argc, char *argv[],struct NewUser *user);
+int ContarArchivo(FILE *usuarios);
+void MenuUser(int argc, char *argv[],struct NewUser *user);
+//int aux(int argc, char *argv[],struct NewUser *user);
+void CrearAcceso(int argc, char *argv[],struct NewUser *user, struct Accesos *acceso,float inicio, float final ,float incremento, char lectura[50]);
+void LeerUsuario(int argc, char *argv[]);
+void BorrarGrafico(int argc, char *argv[]);
+void ListarAccesosUsuario(int argc, char *argv[],struct NewUser *user, char username[25], unsigned char root);
+void EncriptarPassword(char password[25]);
+void PasswordRoot(int argc, char *argv[]);
+void EnmascararPassword(struct NewUser *user, char password[25], char opcion);
